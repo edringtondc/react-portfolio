@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Grumpy Cat Clicky Game",
+        "subtitle": "Play to test your memory!",
+        "image": "../../assets/images/crystals.jpg",
+        "gitHub": "https://github.com/edringtondc/memory-game",
+        "text": "Made with ReactJS",
+        "link": "https://nameless-sands-19428.herokuapp.com/"
+     
+    },
+    {
+        "title": "BrewTinerary",
+        "subtitle": "A brewery based Itinerary app ",
+        "image": "../../assets/images/party.jpg",
+        "gitHub": "https://github.com/edringtondc/Brew-Tinerary",
+        "text": "Made with ReactJS", 
+        "link": "https://sheltered-ocean-66992.herokuapp.com/"
+     
+    },
+    {
+        "title": "Game of Thrones Trivia",
+        "subtitle": "",
+        "image": "../../assets/images/trivia.jpeg",
+        "gitHub": "https://github.com/edringtondc/trivia-game",
+        "text": "Made with Javascript", 
+        "link": "https://edringtondc.github.io/trivia-game/"
+     
+    },
+    {
+        "title": "Friend Finder Quiz",
+        "subtitle": "A survey to find your best 'friend'",
+        "image": "../../assets/images/trivia.jpeg",
+        "gitHub": "https://github.com/edringtondc/trivia-game",
+        "text": "Made with Javascript", 
+        "link": "https://desolate-dawn-37026.herokuapp.com/survey"
+     
+    },
+    {
+        "title": "Crystal Collector App",
+        "subtitle": "Collect all the crystals to win",
+        "image": "../../assets/images/crystals.jpg",
+        "gitHub": "https://github.com/edringtondc/trivia-game",
+        "text": "Javascript. Jquery", 
+        "link": "https://desolate-dawn-37026.herokuapp.com/survey"
+     
+    }
+]

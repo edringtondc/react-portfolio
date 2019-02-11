@@ -1,26 +1,51 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container, } from "react-materialize"
+import NavBar from "./Components/NavBar"
+import Footer from "./Components/Footer"
+import Jumbotron from "./Components/Jumbotron"
+import ProjectContainer from "./Components/ProjectContainer"
+import projects from "./projects.json"
+import "./App.css";
+
+
 
 class App extends Component {
+
+  state = {
+    projects: projects
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <>
+        <NavBar />
+        <Jumbotron />
+        <Container>
+
+
+          {this.state.projects.map(project => {
+            return (<ProjectContainer
+              title={project.title}
+              link={project.link}
+              image={project.image}
+              text={project.text}
+              gitHub={project.gitHub}
+              subtitle={project.subtitle}
+            />)
+
+          })
+          }
+        </Container>
+
+        <Footer />
+
+
+
+
+
+
+      </>
+
     );
   }
 }
