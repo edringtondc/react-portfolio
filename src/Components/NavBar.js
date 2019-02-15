@@ -27,7 +27,7 @@ export default class Example extends React.Component {
       <StyledNavBar brand='EE' className="grey darken-4" left>
         {/* <NavItem href='get-started.html'>Contact</NavItem> */}
        
-        <NavItem href={"../assets/ElisabethEdringtonResume .pdf"} download target='_blank' >Resume</NavItem>
+        <NavItem href={"../assets/ElisabethEdringtonResume .pdf"} download target='_blank'>Resume</NavItem>
 
       </StyledNavBar>
     );

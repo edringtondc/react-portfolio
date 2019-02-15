@@ -20,18 +20,20 @@ class App extends Component {
 
   state = {
     projects: projects,
-    skills: ["Javascript", "React", "MongoDB", "Express", "Node", "Bootstrap", "Materialize", ""]
+    skills: ["Javascript", "React", "MongoDB", "Express", "Node", "MySql", "Mongoose", "", "Bootstrap", "Materialize", "HandleBars", ""]
   }
 
   render() {
     return (
       <>
         <NavBar />
-        <Jumbotron 
+        <Jumbotron
           image="../assets/images/elisabeth.jpg"
           title="Elisabeth Edrington"
           subtitle="Full Stack Developer"
-          text="After 8 plus years of working in the health industry as a doctor of chiropractic, I turned back to my original love of technology. Web development allows me to use both my creative and logical skills, and I am looking forward to turning this interest into a dynamic career." />
+          text="After 8 plus years of working in the health industry as a doctor of chiropractic, I turned back to my original love of technology. Web development allows me to use both my creative and logical skills, and I am looking forward to turning this interest into a dynamic career."
+          skills={this.state.skills}
+        />
         <StyledContainer >
 
 
@@ -47,13 +49,15 @@ class App extends Component {
 
           })
           }
+
         </StyledContainer>
-        <Jumbotron
+
+        {/* <Jumbotron
           title="Skills"
           text={<SkillList skills={this.state.skills}></SkillList>}
           >
    
-          </Jumbotron>
+          </Jumbotron> */}
 
         <Footer />
 

@@ -9,3 +9,17 @@
     padding: 0 1rem;
     min-height: 1px;
 }
+
+.skillListItem{
+    color: #bdbdbd;
+
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+ul#skillsList li {
+    display: inline;
+    
+}
+

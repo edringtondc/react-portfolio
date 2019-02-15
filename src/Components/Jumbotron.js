@@ -1,10 +1,21 @@
 import React from 'react';
 import { Row, Col, CardPanel } from 'react-materialize';
 import styled from "styled-components"
+import { Wobble } from 'animate-css-styled-components';
+
+const StyledListItem = styled.li`
+  color: #bdbdbd;
+`;
+
+const StyledUl = styled.ul`
+display:inline
+`;
 
 
 const StyledCardPanel = styled(CardPanel)`
-  background-image: url(../assets/images/Space.jpg)
+  background-image: url(../assets/images/Space.jpg);
+  padding: 4rem;
+  
 `;
 
 const PortfolioPic = styled.img`
@@ -47,30 +58,51 @@ const About = (props) => {
 
   return (
     <>
-      <StyledRow>
+      <StyledCardPanel>
+        <StyledRow>
 
-        <Col s={12} m={12}>
-          <StyledCardPanel >
-            <StyledRow>
-              <Title>{props.title}</Title>
 
-            </StyledRow>
+          <Title>{props.title}</Title>
+
+        </StyledRow>
+
+        <StyledRow>
+          <Col>
             <StyledRow>
               <PortfolioPic src={props.image} atl={props.title} />
-
             </StyledRow>
             <StyledRow>
               <Subtitle>{props.subtitle}</Subtitle>
             </StyledRow>
             <StyledRow>
               <Text>{props.text}</Text>
-
             </StyledRow>
 
-          </StyledCardPanel>
-        </Col>
+          </Col>
+          <Col>
+       
+            <StyledRow>
+             
+                <ul >
+                  {props.skills.map(skill => (
+                     <Wobble duration="1s" iterationCount="infinite" delay="1s">
+                    <StyledListItem >
+                      <span class="skillitem">{skill} </span>
+                    </StyledListItem>
+                       </Wobble>
 
-      </StyledRow>
+                  ))}
+
+
+                </ul>
+           
+
+            </StyledRow>
+          </Col>
+
+        </StyledRow>
+      </StyledCardPanel>
+
 
 
     </>

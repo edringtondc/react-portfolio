@@ -6,6 +6,10 @@ import { Card, CardTitle, Row, Col } from 'react-materialize'
 const StyledCard = styled(Card)`
     width: 18rem;
     height: 18rem;
+    :hover {
+        border-color: grey;
+        transform: scale(1.1);
+    }
 
 `;
 
