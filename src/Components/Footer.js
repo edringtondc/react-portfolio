@@ -6,6 +6,7 @@ import { Footer, } from 'react-materialize';
 const FooterBar = () => {
 
     return (
+        <div className="grey light-2">
         < Footer  copyrights="&copy 2015 Copyright Text"
            
             moreLinks={
@@ -26,6 +27,7 @@ const FooterBar = () => {
             <h5 className="white-text">Footer Content</h5>
             <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
         </Footer >
+        </div>
     )
 }
 
