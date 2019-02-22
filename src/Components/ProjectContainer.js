@@ -34,11 +34,11 @@ const ProjectContainer = (props) => {
             reveal={
                 <>
                     <p className="grey-text">{props.text}</p>
-                    <p className="grey-text "><a href={props.gitHub}>Check out the repository</a></p>
+                    <p className="grey-text "><a href={props.gitHub}>GitHub Repository</a></p>
                 </>
             }
         >
-            <p className="grey-text "><a href={props.link}>Play the Game</a></p>
+            <p className="grey-text "><a href={props.link} target="_blank">Check it out!</a></p>
 
         </StyledCard>
 
