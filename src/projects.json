@@ -1,47 +1,57 @@
 [
     {
-        "title": "Grumpy Cat Clicky Game",
+        "title": "Grumpy Cat Game",
         "subtitle": "Play to test your memory!",
-        "image": "../../assets/images/crystals.jpg",
+        "image": "../../assets/images/grumpyCat.jpeg",
         "gitHub": "https://github.com/edringtondc/memory-game",
-        "text": "Made with ReactJS",
+        "text": "Memory game to click on different grumpy cat memes without repeating. Created using ReactJs",
         "link": "https://nameless-sands-19428.herokuapp.com/"
      
     },
     {
         "title": "BrewTinerary",
         "subtitle": "A brewery based Itinerary app ",
-        "image": "../../assets/images/party.jpg",
+        "image": "../../assets/images/beer.jpg",
         "gitHub": "https://github.com/edringtondc/Brew-Tinerary",
-        "text": "Made with ReactJS", 
+        "text": "Utilizing BeerMapping API, full stack application using MongoDB, ExpressJS, NodeJS, and ReactJS", 
         "link": "https://sheltered-ocean-66992.herokuapp.com/"
      
     },
     {
-        "title": "Game of Thrones Trivia",
-        "subtitle": "",
+        "title": "GoT Trivia",
+        "subtitle": "How well do you know your Game of Thrones facts?",
         "image": "../../assets/images/trivia.jpeg",
         "gitHub": "https://github.com/edringtondc/trivia-game",
-        "text": "Made with Javascript", 
+        "text": "Javascript application. Originally made to practice using methods such as setTimeOut and setIntervals. ", 
         "link": "https://edringtondc.github.io/trivia-game/"
      
     },
     {
         "title": "Friend Finder Quiz",
         "subtitle": "A survey to find your best 'friend'",
-        "image": "../../assets/images/trivia.jpeg",
-        "gitHub": "https://github.com/edringtondc/trivia-game",
-        "text": "Made with Javascript", 
+        "image": "../../assets/images/banner.jpg",
+        "gitHub": "https://desolate-dawn-37026.herokuapp.com/",
+        "text": "Javascript survey application. Styled with Materialize", 
         "link": "https://desolate-dawn-37026.herokuapp.com/survey"
      
     },
     {
-        "title": "Crystal Collector App",
-        "subtitle": "Collect all the crystals to win",
+        "title": "Burger Eater",
+        "subtitle": "Create and eat burgers",
         "image": "../../assets/images/crystals.jpg",
-        "gitHub": "https://github.com/edringtondc/trivia-game",
-        "text": "Javascript. Jquery", 
-        "link": "https://desolate-dawn-37026.herokuapp.com/survey"
+        "gitHub": "https://github.com/edringtondc/burger-eater",
+        "text": "Javascript. MongoDB", 
+        "link": "https://whispering-ravine-75750.herokuapp.com/"
+     
+    },
+    {
+        "title": "React Tube",
+        "subtitle": "You tube search app",
+        "image": "../../assets/images/download.png",
+        "gitHub": "https://github.com/edringtondc/react-tube",
+        "text": "A you-tube style page using ReactJS and the YouTube API. Styled with ", 
+        "link": "https://edrington.herokuapp.com/"
      
     }
+    
 ]

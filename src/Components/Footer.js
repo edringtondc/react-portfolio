@@ -1,33 +1,59 @@
 import React from 'react';
-import { Footer, } from 'react-materialize';
+import { Row, Col, Icon } from 'react-materialize';
+import styled from "styled-components"
+
+const StyledFooter = styled.footer`
+    background-color: #212121;
+    height: 15rem;
+    width: 100%;
+    color: #ccc;
+    text-align: center;
+    padding: 2rem
+
+`;
+
+const StyledRow = styled(Row)`
+    text-align: center;
+`;
+
+const StyledH4 = styled.h4`
+    text-align: center;
+`;
+
+
 
 
 
 const FooterBar = () => {
 
     return (
-        <div className="grey light-2">
-        < Footer  copyrights="&copy 2015 Copyright Text"
-           
-            moreLinks={
-                
-                < a className="grey-text text-lighten-4 right" href="#!" > More Links</a >
-            }
-    
-            links={
-                < ul >
-                    <li><a className="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                    <li><a className="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                    <li><a className="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                    <li><a className="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul >
-            }
-            className='example'
-        >
-            <h5 className="white-text">Footer Content</h5>
-            <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-        </Footer >
-        </div>
+        < StyledFooter >
+            <StyledRow>
+                <Col md={12}>
+                    <h4>Elisabeth Edrington</h4>
+                </Col>
+
+            </StyledRow >
+            <StyledRow>
+                <Col md={4}>
+                    <a href="https://www.linkedin.com/in/elisabethedrington/"><img src="../assets/images/iconfinder_linkedin_28298.png"/></a>
+                </Col>
+                <Col md={4}>
+                <a href="https://github.com/edringtondc"><img src="../assets/images/Octocat.png"/></a>
+                </Col>
+                <Col md={4}>
+                <a href="mailto:edringtondc@gmail.com">   <Icon small>mail</Icon></a>
+                </Col>
+            </StyledRow>
+            <StyledRow>
+
+                <Col md={12}>
+                    copyright 2019
+                </Col>
+            </StyledRow>
+
+
+        </StyledFooter >
     )
 }
 

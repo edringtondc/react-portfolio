@@ -1,5 +1,11 @@
 import React from 'react';
 import { Navbar, NavItem, } from 'react-materialize';
+import styled from "styled-components";
+
+const StyledNavBar = styled(Navbar)`
+  widthL 100%;
+  margin-left: 0px;
+`;
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -18,11 +24,12 @@ export default class Example extends React.Component {
   }
   render() {
     return (
-      <Navbar brand='logo' className="deep-purple lighten-1" left>
-      <NavItem href='get-started.html'>Contact</NavItem>
-      <NavItem to={"/"} target='_blank' >pdf</NavItem>
-     
-    </Navbar>
+      <StyledNavBar brand='EE' className="grey darken-4" left>
+        {/* <NavItem href='get-started.html'>Contact</NavItem> */}
+       
+        <NavItem href={"../assets/ElisabethEdringtonResume .pdf"} download target='_blank'>Resume</NavItem>
+
+      </StyledNavBar>
     );
   }
 }

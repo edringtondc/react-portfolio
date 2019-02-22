@@ -1,67 +1,113 @@
 import React from 'react';
 import { Row, Col, CardPanel } from 'react-materialize';
 import styled from "styled-components"
+import { Wobble } from 'animate-css-styled-components';
+
+const StyledListItem = styled.li`
+  color: #bdbdbd;
+`;
+
+const StyledUl = styled.ul`
+display:inline
+`;
+
 
 const StyledCardPanel = styled(CardPanel)`
-  height: 300px;
-  position: relative;
+  background-image: url(../assets/images/Space.jpg);
+  padding: 4rem;
   
 `;
 
 const PortfolioPic = styled.img`
-  height: 10rem;
+  height: 12rem;
   border-radius: 25px;
-  position: absolute;
-  top: 1rem;
-  left: 3rem;
- 
+
+`;
+
+const StyledRow = styled(Row)`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  padding-left: 0px;
 
 `;
 
 const Title = styled.h1`
   color: #bdbdbd;
-  position: absolute;
-  top: 1rem;
-  left: 15rem;
+  text-align: center;
   font-size: 48px;
   margin-bottom: 3rem;
 
   
 `;
 
+const Subtitle = styled.p`
+  color: #66C4E6;
+  font-size: 24px;
+
+`;
+
 const Text = styled.p`
   color: #bdbdbd;
-  position: absolute;
-  top: 5rem;
-  left: 15rem;
-  padding-right: 5rem;
+  text-align: center;
 `;
+
+
 const About = (props) => {
 
 
-    return (
+  return (
+    <>
+      <StyledCardPanel>
+        <StyledRow>
 
-    <Row>
-    <Col s={12} m={12}>
-      <StyledCardPanel className="grey darken-3 grey-text">
-      <Title>Elisabeth Edrington</Title>
-      <PortfolioPic src="../assets/images/130419_E Edrington-17-Edit.jpg"/>
-      
-        <Text>After 8 plus years of working in the health industry as a doctor of chiropractic, I turned back to my original love of technology. Web development allows me to use both my creative and logical skills, and I am looking forward to turning this interest into a dynamic career. Currently I am utilizing javascript and libraries such as node.js, express.js, and jQuery. Along with HTML, CSS, handlebars and mySql.</Text>
+
+          <Title>{props.title}</Title>
+
+        </StyledRow>
+
+        <StyledRow>
+          <Col>
+            <StyledRow>
+              <PortfolioPic src={props.image} atl={props.title} />
+            </StyledRow>
+            <StyledRow>
+              <Subtitle>{props.subtitle}</Subtitle>
+            </StyledRow>
+            <StyledRow>
+              <Text>{props.text}</Text>
+            </StyledRow>
+
+          </Col>
+          <Col>
+       
+            <StyledRow>
+             
+                <ul >
+                  {props.skills.map(skill => (
+                     <Wobble duration="1s" iterationCount="infinite" delay="1s">
+                    <StyledListItem >
+                      <span class="skillitem">{skill} </span>
+                    </StyledListItem>
+                       </Wobble>
+
+                  ))}
+
+
+                </ul>
+           
+
+            </StyledRow>
+          </Col>
+
+        </StyledRow>
       </StyledCardPanel>
-    </Col>
- 
-  </Row>
-  //     <div>
-  //       <Jumbotron>
-  //         <h1 className="display-3">Elisabeth Edrington</h1>
-  //         <p className="lead">After 8 plus years of working in the health industry as a doctor of chiropractic, I turned back to my original love of technology. Web development allows me to use both my creative and logical skills, and I am looking forward to turning this interest into a dynamic career. Currently I am utilizing javascript and libraries such as node.js, express.js, and jQuery. Along with HTML, CSS, handlebars and mySql.</p>
-  //         <hr className="my-2" />
 
-  //       </Jumbotron>
-  //     </div>
-    );
-  };
 
-  export default About;
+
+    </>
+  );
+};
+
+export default About;
 
