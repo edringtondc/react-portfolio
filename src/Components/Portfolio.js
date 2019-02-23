@@ -6,7 +6,7 @@ const Portfolio = () => {
 
     
 
-  return   <Containe grey lighten-2r>
+  return   <Container grey lighten-2r>
         <Row>
             <Col>
                 <ProjectCard 
