@@ -23,3 +23,9 @@ ul#skillsList li {
     
 }
 
+
+
+.card .card-image img {
+    height: 200px;
+}
+

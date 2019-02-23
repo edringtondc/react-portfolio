@@ -17,15 +17,7 @@
         "link": "https://sheltered-ocean-66992.herokuapp.com/"
      
     },
-    {
-        "title": "GoT Trivia",
-        "subtitle": "How well do you know your Game of Thrones facts?",
-        "image": "../../assets/images/trivia.jpeg",
-        "gitHub": "https://github.com/edringtondc/trivia-game",
-        "text": "Javascript application. Originally made to practice using methods such as setTimeOut and setIntervals. ", 
-        "link": "https://edringtondc.github.io/trivia-game/"
-     
-    },
+ 
     {
         "title": "Friend Finder Quiz",
         "subtitle": "A survey to find your best 'friend'",
@@ -36,9 +28,18 @@
      
     },
     {
+        "title": "GoT Trivia",
+        "subtitle": "How well do you know your Game of Thrones facts?",
+        "image": "../../assets/images/trivia.jpeg",
+        "gitHub": "https://github.com/edringtondc/trivia-game",
+        "text": "Javascript application. Originally made to practice using methods such as setTimeOut and setIntervals. ", 
+        "link": "https://edringtondc.github.io/trivia-game/"
+     
+    },
+    {
         "title": "Burger Eater",
         "subtitle": "Create and eat burgers",
-        "image": "../../assets/images/crystals.jpg",
+        "image": "../../assets/images/burger2.jpg",
         "gitHub": "https://github.com/edringtondc/burger-eater",
         "text": "Javascript. MongoDB", 
         "link": "https://whispering-ravine-75750.herokuapp.com/"
