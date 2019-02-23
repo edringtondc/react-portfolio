@@ -20,7 +20,7 @@ class App extends Component {
 
   state = {
     projects: projects,
-    skills: ["Javascript", "     React", "React Native", "      MongoDB", "Express", "Node", "MySql", "Mongoose", "Firebase", "Bootstrap", "Materialize", "HandleBars", "CSS3", "HTML5", ]
+    skills: ["Javascript", "React", "React Native", "MongoDB", "Express", "Node", "MySql", "Mongoose", "Firebase", "Bootstrap", "Materialize", "HandleBars", "CSS3", "HTML5", ]
   }
 
   render() {

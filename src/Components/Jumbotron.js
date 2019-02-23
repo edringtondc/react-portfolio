@@ -1,14 +1,18 @@
 import React from 'react';
 import { Row, Col, CardPanel } from 'react-materialize';
 import styled from "styled-components"
-import { Wobble } from 'animate-css-styled-components';
+import { BounceInDown } from 'animate-css-styled-components';
 
 const StyledListItem = styled.li`
   color: #bdbdbd;
+  :hover {
+    color: #66C4E6;
+    transform: scale(1.5);
+}
 `;
 
 const StyledUl = styled.ul`
-display:inline
+  text-align: center;
 `;
 
 
@@ -21,6 +25,7 @@ const StyledCardPanel = styled(CardPanel)`
 const PortfolioPic = styled.img`
   height: 12rem;
   border-radius: 25px;
+  
 
 `;
 
@@ -82,19 +87,29 @@ const About = (props) => {
           <Col>
        
             <StyledRow>
+
+              <div>
+               
+              </div>
              
-                <ul >
+                <StyledUl >
+
+              
+
+
                   {props.skills.map(skill => (
-                     <Wobble duration="1s" iterationCount="infinite" delay="1s">
+                     <BounceInDown duration="1s" iterationCount="1" delay={1 + skill.indexOf()}>
                     <StyledListItem >
                       <span class="skillitem">{skill} </span>
                     </StyledListItem>
-                       </Wobble>
+                       </BounceInDown>
+
+
 
                   ))}
 
 
-                </ul>
+                </StyledUl>
            
 
             </StyledRow>
