@@ -19,13 +19,15 @@ const StyledUl = styled.ul`
 const StyledCardPanel = styled(CardPanel)`
   background-image: url(../assets/images/Space.jpg);
   padding: 4rem;
+  margin-bottom: 5rem;
+  
   
 `;
 
 const PortfolioPic = styled.img`
   height: 12rem;
   border-radius: 25px;
-  
+
 
 `;
 
@@ -98,7 +100,7 @@ const About = (props) => {
 
 
                   {props.skills.map(skill => (
-                     <BounceInDown duration="1s" iterationCount="1" delay={1 + skill.indexOf()}>
+                     <BounceInDown duration="2s" iterationCount="1" delay={1 + skill.indexOf()}>
                     <StyledListItem >
                       <span class="skillitem">{skill} </span>
                     </StyledListItem>

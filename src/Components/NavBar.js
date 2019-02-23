@@ -3,8 +3,15 @@ import { Navbar, NavItem, } from 'react-materialize';
 import styled from "styled-components";
 
 const StyledNavBar = styled(Navbar)`
-  widthL 100%;
+  width: 100%;
   margin-left: 0px;
+  padding-right: 2rem;
+  a:hover{
+      text-decoration: none;
+      color: #66C4E6;
+  };
+  }
+  
 `;
 
 export default class Example extends React.Component {
@@ -26,7 +33,7 @@ export default class Example extends React.Component {
     return (
       <StyledNavBar brand='EE' className="grey darken-4" left>
         {/* <NavItem href='get-started.html'>Contact</NavItem> */}
-       
+
         <NavItem href={"../assets/ElisabethEdringtonResume .pdf"} download target='_blank'>Resume</NavItem>
 
       </StyledNavBar>

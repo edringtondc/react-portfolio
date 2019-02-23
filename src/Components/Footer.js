@@ -8,7 +8,9 @@ const StyledFooter = styled.footer`
     width: 100%;
     color: #ccc;
     text-align: center;
-    padding: 2rem
+    padding: 2rem;
+    margin-top: 2rem;
+
 
 `;
 
@@ -19,9 +21,6 @@ const StyledRow = styled(Row)`
 const StyledH4 = styled.h4`
     text-align: center;
 `;
-
-
-
 
 
 const FooterBar = () => {
