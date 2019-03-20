@@ -19,7 +19,11 @@
 }
 
 ul#skillsList li {
-    display: inline;
+    display: inline-block;
     
+}
+
+body {
+    background-color: #142143 !important;
 }
 

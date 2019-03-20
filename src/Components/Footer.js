@@ -20,12 +20,7 @@ const StyledH4 = styled.h4`
     text-align: center;
 `;
 
-
-
-
-
 const FooterBar = () => {
-
     return (
         < StyledFooter >
             <StyledRow>
@@ -51,7 +46,6 @@ const FooterBar = () => {
                     copyright 2019
                 </Col>
             </StyledRow>
-
 
         </StyledFooter >
     )

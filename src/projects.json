@@ -50,7 +50,7 @@
         "image": "../../assets/images/download.png",
         "gitHub": "https://github.com/edringtondc/react-tube",
         "text": "A you-tube style page using ReactJS and the YouTube API. Styled with ", 
-        "link": "https://edringtondc.github.io/react-tube/"
+        "link": "https://edrington.herokuapp.com/"
      
     }
     

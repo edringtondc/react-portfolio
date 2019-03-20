@@ -13,13 +13,14 @@ const StyledCard = styled(Card)`
 
 `;
 
-
 const StyledLink = styled.a`
  
     hover: {
         text-decoration: none;
     }
 `;
+
+
 
 const ProjectContainer = (props) => {
 

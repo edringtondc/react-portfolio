@@ -3,7 +3,7 @@ import { Container, } from "react-materialize"
 import NavBar from "./Components/NavBar"
 import Footer from "./Components/Footer"
 import Jumbotron from "./Components/Jumbotron"
-import Wrapper from "./Components/Wrapper"
+import ContactForm from "./Components/ContactForm"
 import styled from "styled-components"
 import ProjectContainer from "./Components/ProjectContainer"
 import SkillList from "./Components/SkillList"
@@ -58,6 +58,7 @@ class App extends Component {
           >
    
           </Jumbotron> */}
+         
 
         <Footer />
 

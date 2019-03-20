@@ -5,31 +5,31 @@ import { Wobble } from 'animate-css-styled-components';
 
 const StyledListItem = styled.li`
   color: #bdbdbd;
+  float: left;
+  display: inline-block;
 `;
 
 const StyledUl = styled.ul`
-display:inline
+  list-style-type: none;
 `;
-
 
 const StyledCardPanel = styled(CardPanel)`
   background-image: url(../assets/images/Space.jpg);
-  padding: 4rem;
-  
+  padding: 2rem;
+  height: auto;
 `;
 
 const PortfolioPic = styled.img`
   height: 12rem;
   border-radius: 25px;
-
 `;
 
 const StyledRow = styled(Row)`
   display: flex;
+  flex: row;
   justify-content: center;
   margin-bottom: 0;
   padding-left: 0px;
-
 `;
 
 const Title = styled.h1`
@@ -37,14 +37,11 @@ const Title = styled.h1`
   text-align: center;
   font-size: 48px;
   margin-bottom: 3rem;
-
-  
 `;
 
 const Subtitle = styled.p`
   color: #66C4E6;
   font-size: 24px;
-
 `;
 
 const Text = styled.p`
@@ -52,38 +49,27 @@ const Text = styled.p`
   text-align: center;
 `;
 
-
 const About = (props) => {
-
-
   return (
     <>
       <StyledCardPanel>
         <StyledRow>
-
-
           <Title>{props.title}</Title>
-
         </StyledRow>
 
         <StyledRow>
-          <Col>
-            <StyledRow>
-              <PortfolioPic src={props.image} atl={props.title} />
-            </StyledRow>
-            <StyledRow>
-              <Subtitle>{props.subtitle}</Subtitle>
-            </StyledRow>
-            <StyledRow>
-              <Text>{props.text}</Text>
-            </StyledRow>
+          <PortfolioPic src={props.image} atl={props.title} />
+        </StyledRow>
+        <StyledRow>
+          <Subtitle>{props.subtitle}</Subtitle>
+        </StyledRow>
+        <StyledRow>
+          <Text>{props.text}</Text>
+        </StyledRow>
 
-          </Col>
-          <Col>
-       
-            <StyledRow>
-             
-                <ul >
+
+        <StyledRow>
+          {/* <StyledUl >
                   {props.skills.map(skill => (
                      <Wobble duration="1s" iterationCount="infinite" delay="1s">
                     <StyledListItem >
@@ -92,19 +78,11 @@ const About = (props) => {
                        </Wobble>
 
                   ))}
-
-
-                </ul>
-           
-
-            </StyledRow>
-          </Col>
+                </StyledUl>
+            */}
 
         </StyledRow>
       </StyledCardPanel>
-
-
-
     </>
   );
 };
