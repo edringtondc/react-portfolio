@@ -31,7 +31,8 @@ class App extends Component {
           image="../assets/images/elisabeth.jpg"
           title="Elisabeth Edrington"
           subtitle="Full Stack Developer"
-          text="After 8 plus years of working in the health industry as a doctor of chiropractic, I turned back to my original love of technology. Web development allows me to use both my creative and logical skills, and I am looking forward to turning this interest into a dynamic career."
+          text="Arising Full Stack Web Developer who brings a wealth of experience from the fast---paced, competitive healthcare field to IT. Proven professional with a record of successfully managing projects and teams, and making critical decisions under challenging circumstances. Lifelong learner, with a desire to always improve."
+        
           skills={this.state.skills}
         />
         <StyledContainer >

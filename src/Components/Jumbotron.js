@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, CardPanel } from 'react-materialize';
 import styled from "styled-components"
 import { Wobble } from 'animate-css-styled-components';
+  import {TagCloud} from "react-tagcloud";
 
 const StyledListItem = styled.li`
   color: #bdbdbd;
@@ -69,18 +70,10 @@ const About = (props) => {
 
 
         <StyledRow>
-          {/* <StyledUl >
-                  {props.skills.map(skill => (
-                     <Wobble duration="1s" iterationCount="infinite" delay="1s">
-                    <StyledListItem >
-                      <span class="skillitem">{skill} </span>
-                    </StyledListItem>
-                       </Wobble>
+        
+  
 
-                  ))}
-                </StyledUl>
-            */}
-
+          
         </StyledRow>
       </StyledCardPanel>
     </>

@@ -31,15 +31,22 @@ const FooterBar = () => {
             </StyledRow >
             <StyledRow>
                 <Col md={4}>
-                    <a href="https://www.linkedin.com/in/elisabethedrington/"><img src="../assets/images/iconfinder_linkedin_28298.png"/></a>
+                    <a href="https://www.linkedin.com/in/elisabethedrington/"><img src="../assets/images/iconfinder_linkedin_28298.png" /></a>
                 </Col>
                 <Col md={4}>
-                <a href="https://github.com/edringtondc"><img src="../assets/images/Octocat.png"/></a>
+                    <a href="https://github.com/edringtondc"><img src="../assets/images/Octocat.png" /></a>
                 </Col>
                 <Col md={4}>
-                <a href="mailto:edringtondc@gmail.com">   <Icon small>mail</Icon></a>
+                    <a href="mailto:edringtondc@gmail.com">   <Icon small>mail</Icon></a>
                 </Col>
             </StyledRow>
+            <StyledRow>
+
+                <Col md={12}>
+                    <p>This is a static website, built with ReactJS and Materialize from scratch without create-react-app, and deployed on AWS S3.  </p>
+                </Col>
+            </StyledRow>
+
             <StyledRow>
 
                 <Col md={12}>
